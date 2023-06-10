@@ -94,19 +94,7 @@
 \begin{document}
 
 \title[Article Title]{Use of Facial Recognition Algorithm in allotting
-Attendances}
-
-%%=============================================================%%
-%% Prefix	-> \pfx{Dr}
-%% GivenName	-> \fnm{Joergen W.}
-%% Particle	-> \spfx{van der} -> surname prefix
-%% FamilyName	-> \sur{Ploeg}
-%% Suffix	-> \sfx{IV}
-%% NatureName	-> \tanm{Poet Laureate} -> Title after name
-%% Degrees	-> \dgr{MSc, PhD}
-%% \author*[1,2]{\pfx{Dr} \fnm{Joergen W.} \spfx{van der} \sur{Ploeg} \sfx{IV} \tanm{Poet Laureate} 
-%%                 \dgr{MSc, PhD}}\email{iauthor@gmail.com}
-%%=============================================================%%
+Attendances to a classroom}
 
 \author*{\fnm{Abir} \sur{Bhattacharya}}\email{abirbhattacharya82@gmail.com}
 
@@ -116,40 +104,17 @@ Attendances}
 
 \affil{\orgdiv{Information Technology}, \orgname{Calcutta Institute of Engineering and Management}, \orgaddress{\street{24, 1A, Chandi Ghosh Lane}, \city{Kolkata}, \postcode{700040}, \state{West Bengal}, \country{India}}}
 
-%%==================================%%
-%% sample for unstructured abstract %%
-%%==================================%%
-
 \abstract{In the past attendances have been maintained using a hard copy such as a file. With passing time the technologies have been utilised and hard copies have been converted into soft copies such as an excel sheet. Next came the Artificial Intelligence revolution where a person's fingerprint or face recognition soft wares have been used to record attendances. But all these processes are time consuming. Our solution is a process where we take a single picture and check if that person is present or not in the image and allot attendances to that person.}
-
-%%================================%%
-%% Sample for structured abstract %%
-%%================================%%
-
-% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
-% 
-% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
-% 
-% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
-% 
-% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
 
 \keywords{Artificial Intelligence, Face Recognition}
 
-%%\pacs[JEL Classification]{D8, H51}
-
-%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
-
 \maketitle
-
 \section{Introduction}\label{sec1}
+Facial Recognition is a process where a face is detected from an image and then that face is checked with the data set of facial images. In our solution the data set is composed of images of a students which are taken when a student is admitted in a class or an institution. This is used for recognition purposes. However the face detection part is handled using an open source package called face-api.js by Vincent Mühler. This package is a JavaScript API for face detection and face recognition in the browser implemented on top of the tensorflow.js core API.
 
-The Introduction section, of referenced text \cite{bib1} expands on the background of the work (some overlap with the Abstract is acceptable). The introduction should not include subheadings.
-
-Springer Nature does not impose a strict layout as standard however authors are advised to check the individual requirements for the journal they are planning to submit to as there may be journal-level preferences. When preparing your text please also be aware that some stylistic choices are not supported in full text XML (publication version), including coloured font. These will not be replicated in the typeset article if it is accepted. 
+Once the faces are recognised we are allotting the attendances in our No SQL Database which is MongoDB. For the front end we are using HTML, CSS and JavaScript. The main advantage of using our system involves the fact that no one has to stand in long queues to put their attendances, one person cannot allot attendances for another person and also takes very less time in completing the entire procedure.
 
 \section{Results}\label{sec2}
-
 Sample body text. Sample body text. Sample body text. Sample body text. Sample body text. Sample body text. Sample body text. Sample body text.
 
 \section{This is an example for first level head---section head}\label{sec3}
